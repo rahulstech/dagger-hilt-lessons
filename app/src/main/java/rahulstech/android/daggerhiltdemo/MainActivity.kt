@@ -10,6 +10,7 @@ import rahulstech.android.daggerhiltdemo.binding.LogInActivity
 import rahulstech.android.daggerhiltdemo.databinding.ActivityMainBinding
 import rahulstech.android.daggerhiltdemo.lifecycle.HiltLifecycleActivity
 import rahulstech.android.daggerhiltdemo.qualifier.LogInActivity2
+import rahulstech.android.daggerhiltdemo.viewmodel.QuoteActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         LogInActivity::class.java,
         HiltLifecycleActivity::class.java,
         LogInActivity2::class.java,
+        QuoteActivity::class.java
     )
 
     val NAMES = CLASSES.map { it.simpleName }
