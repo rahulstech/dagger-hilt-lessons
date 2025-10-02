@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import rahulstech.android.daggerhiltdemo.basic.BasicDIActivity
 import rahulstech.android.daggerhiltdemo.binding.LogInActivity
+import rahulstech.android.daggerhiltdemo.contextinjection.ColorPickerActivityBaseTheme
 import rahulstech.android.daggerhiltdemo.databinding.ActivityMainBinding
 import rahulstech.android.daggerhiltdemo.lifecycle.HiltLifecycleActivity
 import rahulstech.android.daggerhiltdemo.qualifier.LogInActivity2
@@ -19,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         LogInActivity::class.java,
         HiltLifecycleActivity::class.java,
         LogInActivity2::class.java,
-        QuoteActivity::class.java
+        QuoteActivity::class.java,
+        ColorPickerActivityBaseTheme::class.java,
     )
 
     val NAMES = CLASSES.map { it.simpleName }
