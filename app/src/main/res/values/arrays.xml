@@ -2,7 +2,8 @@
 <resources>
     <string-array name="nav_items">
         <item>BasicDIActivity</item>
-        <item>LogInActivity</item>
+        <item>LogInActivity (@Binds and @Provides)</item>
         <item>HiltLifecycleActivity</item>
+        <item>LogInActivity2 (@Named Qualifier)</item>
     </string-array>
 </resources>
