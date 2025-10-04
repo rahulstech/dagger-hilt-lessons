@@ -1,11 +1,10 @@
-package rahulstech.android.daggerhiltdemo.binding.impl
+package rahulstech.android.daggerhiltdemo.binding
 
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import rahulstech.android.daggerhiltdemo.binding.AuthenticatorService
+import rahulstech.android.daggerhiltdemo.binding.impl.AuthenticatorServiceImpl
 import javax.inject.Singleton
 
 /**
