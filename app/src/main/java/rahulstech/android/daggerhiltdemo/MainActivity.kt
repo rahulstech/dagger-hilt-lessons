@@ -5,12 +5,14 @@ import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
+import dagger.hilt.android.AndroidEntryPoint
 import rahulstech.android.daggerhiltdemo.basic.BasicDIActivity
 import rahulstech.android.daggerhiltdemo.binding.LogInActivity
 import rahulstech.android.daggerhiltdemo.contextinjection.ColorPickerActivityBaseTheme
 import rahulstech.android.daggerhiltdemo.databinding.ActivityMainBinding
 import rahulstech.android.daggerhiltdemo.lifecycle.HiltLifecycleActivity
 import rahulstech.android.daggerhiltdemo.qualifier.LogInActivity2
+import rahulstech.android.daggerhiltdemo.qualifier_intermedia.NotesListActivity
 import rahulstech.android.daggerhiltdemo.scoped_hierarchy.CounterActivity
 import rahulstech.android.daggerhiltdemo.viewmodel.QuoteActivity
 
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         QuoteActivity::class.java,
         ColorPickerActivityBaseTheme::class.java,
         CounterActivity::class.java,
+        NotesListActivity::class.java,
     )
 
     val NAMES = CLASSES.map { it.simpleName }

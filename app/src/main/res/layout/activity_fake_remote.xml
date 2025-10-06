@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:padding="24dp"
+    tools:context=".qualifier_intermedia.FakeRemoteActivity">
+
+    <TextView
+        android:id="@+id/counter_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        tools:text="Remote Notes Count: 14"/>
+
+    <EditText
+        android:id="@+id/note_content_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:hint="Note Content"
+        android:layout_marginTop="24dp"
+        tools:ignore="Autofill,HardcodedText"/>
+
+    <Button
+        android:id="@+id/btn_add_remote_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Remote Note"
+        android:layout_marginTop="24dp"
+        tools:ignore="HardcodedText"/>
+
+</LinearLayout>
